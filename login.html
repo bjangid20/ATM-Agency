@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ATM Agency</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img style="height: 70px;object-fit: cover;" src="./assets/icons/logo.png"/></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- home-->
+        <header class="masthead" id="home">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                  <div id='login'>
+                    <div class="container">
+                        <div class="row py-5 mt-4 align-items-center">
+                            <!-- For Demo Purpose -->
+                            <div class="col-md-5 pr-lg-5 mb-5 mb-md-0 text-center">
+                                <!-- <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt="" class="img-fluid mb-3 d-none d-md-block"> -->
+                                <img src="./assets/img/SARDARJI.png" alt="" class="img-fluid mb-3 d-none d-md-block">
+                                <h5>Create an Account</h5>
+                                <p class="font-italic text-muted mb-0">Bla Bla Bla</p>
+                               
+                            </div>
+                            <!-- Registeration Form -->
+                            <div class="col-md-7 col-lg-6 ml-auto" style="margin-top: 12rem;">
+                                <form action="#" method="post" name="signin" id="signin">
+                                    <div class="row">
+                                        <!-- Email Address -->
+                                        <div class="input-group col-lg-12 mb-4">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                                    <i class="fa fa-envelope text-muted"></i>
+                                                </span>
+                                            </div>
+                                            <input id="email" type="email" name="email" placeholder="Email Address" class="form-control bg-white border-left-0 border-md">
+                                        </div>
+                                        <input type="hidden" name="hide" id="hide" />
+                                        <div style="color:red" id="err"></div>
+                                        <!-- Password -->
+                                        <div class="input-group col-lg-12 mb-4">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                                    <i class="fa fa-lock text-muted"></i>
+                                                </span>
+                                            </div>
+                                            <input id="password" type="password" name="password" placeholder="Password" class="form-control bg-white border-left-0 border-md">
+                                        </div>
+                                    
+                                        <!-- Submit Button -->
+                                        <div class="form-group col-lg-12 mx-auto mb-0">
+                                            <a href="#"  type="submit" onclick="return encrypt()" value="LOGIN" class="btn btn-primary btn-block py-2">
+                                                <span class="font-weight-bold">Login</span>
+                                            </a>
+                                        </div>
+                  
+                                        <!-- Divider Text -->
+                                        <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+                                            <div class="border-bottom w-100 ml-5"></div>
+                                            <span class="px-2 small text-muted font-weight-bold text-muted">OR</span>
+                                            <div class="border-bottom w-100 mr-5"></div>
+                                        </div>
+                  
+                                        <!-- Already Registered -->
+                                        <div class="text-center w-100">
+                                            <p class="text-muted font-weight-bold">Do not have Account Yet? <a class="nav-link js-scroll-trigger" href="index.html">Register</a></p><li class="nav-item">
+                                        </div>
+                  
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </header>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/login.js"></script>
+    </body>
+</html>
