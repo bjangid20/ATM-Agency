@@ -10361,3 +10361,35 @@ body {
   background-attachment: scroll;
   background-size: cover;
 }
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5rem;
+  
+}
+
+.icons__each {
+  text-align: center;
+  position: relative;
+  margin: 10px
+}
+
+.icon_image {
+  width: 150px;
+  background: #75c045;
+}
+
+@media only screen and (min-width: 1440px) {
+  .icons p {
+    position: absolute;
+    width: 150px;
+  }
+}
+/* @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  .icons p {
+    position: unset;
+    text-align: center;
+  }
+} */
